@@ -12,7 +12,7 @@ const TeamSection = () => {
         <div className="lead-row">
           <div className="team-lead">
             <img
-              src="/src/assets/akhil.png"
+              src="/akhil.png"
               alt="Lead"
               className="member-img lead"
             />
@@ -22,7 +22,7 @@ const TeamSection = () => {
 
           <div className="team-sublead">
             <img
-              src="/src/assets/akhil.png"
+              src="/akhil.png"
               alt="Sub Lead"
               className="member-img sublead"
             />
@@ -37,7 +37,7 @@ const TeamSection = () => {
           {["Member 1", "Member 2", "Member 3"].map((name, index) => (
             <div className="member-card" key={index}>
               <img
-                src="/src/assets/akhil.png"
+                src="/akhil.png"
                 alt={name}
                 className="member-img"
               />
@@ -52,7 +52,7 @@ const TeamSection = () => {
           {["Volunteer 1", "Volunteer 2", "Volunteer 3"].map((name, index) => (
             <div className="member-card" key={index}>
               <img
-                src="/src/assets/akhil.png"
+                src="/akhil.png"
                 alt={name}
                 className="member-img"
               />
