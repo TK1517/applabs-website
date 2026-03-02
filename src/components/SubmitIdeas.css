@@ -1,0 +1,40 @@
+.submit-section {
+  padding: 100px 8%;
+  text-align: center;
+}
+
+.idea-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.idea-form input,
+.idea-form textarea {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.idea-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.idea-form button {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background: #25eb77;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.idea-form button:hover {
+  background: #1dd85e;
+}

@@ -1,0 +1,139 @@
+/* Smooth transition */
+body {
+  transition: background 0.4s ease;
+}
+
+/* ========================= */
+/* DARK MODE */
+/* ========================= */
+
+body.dark {
+  background: linear-gradient(135deg, #011710, #01180b, #0a210f);
+  color: white;
+}
+
+/* ========================= */
+/* LIGHT MODE */
+/* ========================= */
+
+body.light {
+  background: linear-gradient(135deg, #e2e8f0, #f8fafc);
+  color: black;
+}
+
+/* Navbar adapts in light mode */
+body.light .navbar {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light .nav-links,
+body.light .logo {
+  color: black;
+}
+
+body.light .hamburger {
+  color: black;
+}
+
+/* ========================= */
+/* NAVBAR BASE */
+/* ========================= */
+
+.navbar {
+  width: 95%;
+  max-width: 1300px;   /* Increase this */
+  margin: 20px auto;
+  padding: 20px 40px;
+  border-radius: 20px;
+}
+
+/* Desktop nav links */
+.nav-links {
+  list-style: none;
+  display: flex;              /* MISSING BEFORE */
+  gap: 3px;
+  align-items: center;
+}
+
+/* Right side container */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/* Toggle button */
+.theme-toggle {
+  font-size: 14px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-toggle:hover {
+  transform:  scale(1.2);
+}
+
+/* ========================= */
+/* HAMBURGER */
+/* ========================= */
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #10b981;
+}
+
+/* ========================= */
+/* MOBILE STYLES */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.95);
+    
+    /* 🔥 IMPORTANT FIX */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding: 0;
+  }
+
+  .nav-links.active {
+    max-height: 300px;
+    padding: 20px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Light mode hamburger dropdown */
+body.light .nav-links {
+  background: rgba(255, 255, 255, 0.98);
+}
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}

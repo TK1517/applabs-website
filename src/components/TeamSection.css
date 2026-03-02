@@ -1,0 +1,78 @@
+.team-section {
+  padding: 100px 20px 60px;
+  width: 100%;
+}
+
+.team-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Title */
+.team-title {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+/* 🔥 Lead + Sublead in one row */
+.lead-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.member-img {
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px;
+  transition: 0.3s ease;
+}
+
+/* Lead */
+.lead {
+  width: 180px;
+  height: 180px;
+}
+
+/* Sublead */
+.sublead {
+  width: 150px;
+  height: 150px;
+}
+
+/* Category Headings */
+.category {
+  font-size: 22px;
+  margin: 40px 0 30px;
+}
+
+/* 🔥 Compact Grid */
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.member-card {
+  text-align: center;
+  width: 130px;
+}
+
+/* Core Member Size */
+.member-card img {
+  width: 110px;
+  height: 110px;
+}
+
+/* Volunteers Smaller */
+.team-grid.small .member-card img {
+  width: 95px;
+  height: 95px;
+}
